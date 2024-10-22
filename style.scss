@@ -1,0 +1,125 @@
+// Variables
+$primary-color: black;
+$secondary-color: #075b2a;
+$font-stack: 'Segoe UI', sans-serif;
+$base-padding: 20px;
+
+// Mixin for reusability
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Base styles
+body {
+    font-family: $font-stack;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+// Header styles
+.header {
+    background: linear-gradient(to right, #10f0c0, #085ab8);
+    color: white;
+    padding: $base-padding;
+
+    .container {
+        @include flex-center;
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .nav li {
+        display: inline-block;
+        margin: 0 10px;
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// Content styles
+.content {
+    padding: $base-padding;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: $base-padding;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    h2 {
+        color: $secondary-color;
+        text-align: center;
+    }
+    p {
+        color: $primary-color;
+        text-align: center;
+    }
+    image {
+        width: 100%;
+    }
+    h3 {
+        text-align: center;
+        color: $secondary-color;
+    }
+    img {
+        margin-left: 20rem;
+        width: 500px;
+        padding: 15px 0px;
+    }
+    .features {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    cursor: pointer;
+}
+.feature {
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+}
+
+// Footer styles
+.footer {
+    background-color: $secondary-color;
+    color: white;
+    padding: $base-padding;
+    text-align: center;
+
+    .container {
+        @include flex-center(left);
+    }
+}

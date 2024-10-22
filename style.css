@@ -1,0 +1,108 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.header {
+  background: linear-gradient(to right, #555513, #055f1d);
+  color: white;
+  padding: 20px;
+}
+.header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header .title {
+  font-size: 2.5rem;
+}
+.header .subtitle {
+  font-size: 1.2rem;
+}
+.header .nav ul {
+  list-style: none;
+  padding: 0;
+}
+.header .nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.header .nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.header .nav li a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  padding: 20px;
+}
+.content .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+.content h2 {
+  color: #075b2a;
+  text-align: center;
+}
+.content p {
+  color: black;
+  text-align: center;
+}
+.content image {
+  width: 100%;
+}
+.content h3 {
+  text-align: center;
+  color: #075b2a;
+}
+.content img {
+  margin-left: 20rem;
+  width: 500px;
+  padding: 15px 0px;
+}
+.content .features {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+}
+.content .feature {
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.content .feature:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.footer {
+  background-color: #075b2a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .ref {
+  display: flex;
+  justify-content: left;
+}
+.footer .ref a {
+  padding: 5px;
+}/*# sourceMappingURL=style.css.map */
